@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
 }
@@ -45,6 +45,11 @@ main {
     align-items: center;
     font-family: 'Nunito', sans-serif;
     font-size: 1.5rem;
+    
+}
+
+.fa-duotone {
+    font-size: 2.5rem;
 }
 
 .jokeContainer {
