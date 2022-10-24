@@ -1,0 +1,11 @@
+// Sass files that are standard
+@import './partials/setup';
+@import './partials/variables';
+@import './partials/typography';
+@import './partials/baseStyles';
+
+
+
+// Sass files for the index.html page
+@import './partials/header';
+@import './partials/footer';
