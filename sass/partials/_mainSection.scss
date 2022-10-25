@@ -1,0 +1,38 @@
+.generatorContent {
+    display: flex;
+    justify-content: center;
+
+    .buttonContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 75px 10px 75px 0;
+        width: calc(30% - 30px);
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .buttonGenerator {
+        background: transparent;
+        border: none;
+        transition: 0.3s;
+        color: $buttonPrimary;
+
+        &:hover,
+        &:focus {
+            color: $buttonHover;
+        }
+    }
+
+    .jokeContainer {
+        background-image: url('../assets/jokeBackground.png');
+        background-position: center;
+        background-size: cover;
+        padding: 30px;
+        margin: 40px 10px 25px 10px;
+        width: calc(70% - 30px);
+        border-radius: 10px;
+    }
+}
