@@ -14,7 +14,7 @@ app.getJokes = () => {
         return response.json();
     })
     .then(res => {
-        console.log(res)
+        app.populateJokeContent(res)
     });
 }
 
@@ -23,3 +23,30 @@ app.init = () => {
 }
 
 app.init();
+
+app.populateJokeContent = (dad) => {
+    // Query select jokeContent in the event listener
+    const dadJoke = dad.joke
+    console.log(dad.joke);
+     app.paragraph = document.querySelector('.jokeContent');
+    
+    app.paragraph.textContent = dadJoke
+
+    
+
+
+    
+     
+     
+}
+
+app.button = document.querySelector('.buttonGenerator');
+// listen for the click on buttonGenerator
+app.button.addEventListener('click', app.populateJokeContent);
+    
+   
+   
+    
+
+
+// need to target the jokeContent paragraph when the button is clicked
