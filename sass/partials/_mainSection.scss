@@ -23,6 +23,7 @@
         &:hover,
         &:focus {
             color: $buttonHover;
+            cursor: pointer;
         }
     }
 

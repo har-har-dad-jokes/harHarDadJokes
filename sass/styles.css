@@ -371,6 +371,7 @@ header .headerContainer h2 {
 }
 .generatorContent .buttonGenerator:hover, .generatorContent .buttonGenerator:focus {
   color: royalblue;
+  cursor: pointer;
 }
 .generatorContent .jokeContainer {
   background-image: url("../assets/jokeBackground.png");
