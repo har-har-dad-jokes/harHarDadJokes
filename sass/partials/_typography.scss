@@ -1,0 +1,39 @@
+html {
+    font-size: 125%;
+    color: $primaryFontColour;
+}
+
+body {
+    font-family: $bodyFont;
+}
+
+header{
+    h1 {
+        text-align: center;
+        font-family: $headerFont;
+        font-size: 7rem;
+        line-height: 1em;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+
+.generatorContent{
+    .buttonContainer {
+        font-family: $bodyFont;
+        font-size: 1.5rem;
+    }
+
+    .buttonGenerator {
+        font-size: 8rem;
+    }
+
+    .jokeContainer {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+}
