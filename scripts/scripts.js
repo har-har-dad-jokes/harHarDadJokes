@@ -2,6 +2,7 @@ const app = {};
 
 app.baseUrl = 'https://icanhazdadjoke.com/';
 
+//fetch joke data from api, then add data to paragraph in DOM
 app.getJokes = () => {
     const url = new URL(app.baseUrl);
     fetch(url, {
@@ -18,35 +19,26 @@ app.getJokes = () => {
     });
 }
 
+//function to display fetched joke data inside p tags in DOM
+app.populateJokeContent = (dad) => {
+    //create variable for dad joke data
+    const dadJoke = dad.joke
+    //select paragraph from page
+    app.paragraph = document.querySelector('.jokeContent');
+    //add text from dad joke data inside p tags
+    app.paragraph.textContent = dadJoke;  
+}
+
+//event listener for user button click
+//select button from page
+app.button = document.querySelector('.buttonGenerator');
+//listen for the click on .buttonGenerator, then call getJokes function to fetch data from api and add data to p tags
+app.button.addEventListener('click', app.getJokes);
+    
+//initialize getJokes function on page load   
 app.init = () => {
     app.getJokes();
 }
 
+//call init method
 app.init();
-
-app.populateJokeContent = (dad) => {
-    // Query select jokeContent in the event listener
-    const dadJoke = dad.joke
-    console.log(dad.joke);
-     app.paragraph = document.querySelector('.jokeContent');
-    
-    app.paragraph.textContent = dadJoke
-
-    
-
-
-    
-     
-     
-}
-
-app.button = document.querySelector('.buttonGenerator');
-// listen for the click on buttonGenerator
-app.button.addEventListener('click', app.populateJokeContent);
-    
-   
-   
-    
-
-
-// need to target the jokeContent paragraph when the button is clicked
