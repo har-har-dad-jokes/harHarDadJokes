@@ -28,10 +28,26 @@ appGif.init = () => {
         return response.json();
     })
     .then(res => {
-        // appGif.displayGif(res.data);
-        console.log(res.data);
+        appGif.displayGif(res.data);
     });
 }
 
+appGif.displayGif = (gifData) => {
+
+    gifData.forEach(gif => {
+        //capture the img src url from the data
+        const gifSrc = gif.images.original.url;
+        console.log(gifSrc);
+
+        const gifAlt = gif.title;
+
+        //get img/alt elements from page
+        const image = document.getElementById('gif')
+        //update the img src url in the DOM using data.images.original.url
+        image.src = gifSrc;
+        image.alt = gifAlt;
+        //update the alt text in the DOM using title
+    })
+}
 
 appGif.init();
