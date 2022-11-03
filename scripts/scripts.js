@@ -38,6 +38,7 @@ app.button = document.querySelector('.buttonGenerator');
 app.button.addEventListener('click', app.getJokes);
 
 
+
     
 //initialize getJokes function on page load   
 app.init = () => {

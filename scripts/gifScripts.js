@@ -50,4 +50,13 @@ appGif.displayGif = (gifData) => {
     })
 }
 
+    // event listener for user button click
+    // select button from page
+    // listen for the button to be clicked and it should generate a random Dad Gif
+    app.button.addEventListener('click', function () {
+        Math.floor.apply(Math.random() * appGif.getGifs('dad'));
+    });
+
+
+
 appGif.init();
