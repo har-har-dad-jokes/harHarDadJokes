@@ -19,6 +19,8 @@ app.getJokes = () => {
     });
 }
 
+
+
 //function to display fetched joke data inside p tags in DOM
 app.populateJokeContent = (dad) => {
     //create variable for dad joke data
@@ -34,6 +36,8 @@ app.populateJokeContent = (dad) => {
 app.button = document.querySelector('.buttonGenerator');
 //listen for the click on .buttonGenerator, then call getJokes function to fetch data from api and add data to p tags
 app.button.addEventListener('click', app.getJokes);
+
+
     
 //initialize getJokes function on page load   
 app.init = () => {
