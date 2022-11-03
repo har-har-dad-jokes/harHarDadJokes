@@ -1,5 +1,7 @@
+// create an empty object for name spacing
 const app = {};
 
+// storing the base url into a variable
 app.baseUrl = 'https://icanhazdadjoke.com/';
 
 //fetch joke data from api, then add data to paragraph in DOM

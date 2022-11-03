@@ -1,3 +1,4 @@
+// create an empty object for name spacing
 const appGif = {};
 
 // Storing the app key into a variable
@@ -10,7 +11,7 @@ appGif.init = () => {
     appGif.getGifs('dad');
 }
 
-//fetch joke data from api, then add data to paragraph in DOM
+    //fetch joke data from api, then add data to paragraph in DOM
     appGif.getGifs = (inqury) => {
     const url = new URL(appGif.baseUrl);
 
@@ -22,7 +23,7 @@ appGif.init = () => {
         offset: Math.floor(Math.random() * 50)
     
     });
-
+    // fetch Gif data from api, then add data to an image tag
     fetch(url)
     .then(response => {
         return response.json();
@@ -37,8 +38,6 @@ appGif.displayGif = (gifData) => {
     gifData.forEach(gif => {
         //capture the img src url from the data
         const gifSrc = gif.images.original.url;
-        console.log(gifSrc);
-
         const gifAlt = gif.title;
 
         //get img/alt elements from page
