@@ -397,4 +397,21 @@ footer a {
 }
 footer a:hover, footer a:focus {
   text-decoration: underline;
+}
+
+@media (max-width: 815px) {
+  .wrapper {
+    width: 95%;
+  }
+  .generatorContent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .generatorContent .buttonContainer {
+    min-width: 90%;
+    margin: 0 auto;
+  }
+  .generatorContent .jokeContainer {
+    min-width: 90%;
+  }
 }/*# sourceMappingURL=styles.css.map */
